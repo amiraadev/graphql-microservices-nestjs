@@ -1,0 +1,4 @@
+mutation {
+   createPost( createPostInput: { id:"234",body:"some text",authorId:"foulen"})
+     {id,body,authorId}
+     }
