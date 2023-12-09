@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { ID, ObjectType, Field, Directive } from '@nestjs/graphql';
 import { Post } from './post.entity';
 
