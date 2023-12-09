@@ -11,7 +11,7 @@ export class PostsService {
     return `This action returns all posts`;
   }
 
-  findOne(id: number) {
+  findOne(id: string) {
     return `This action returns a #${id} post`;
   }
 }
