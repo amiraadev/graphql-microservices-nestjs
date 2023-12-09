@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/graphQL-microservices-nestjs/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/graphQL-microservices-nestjs/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/graphQL-microservices-nestjs",
+  "projects": {
+    "graphQL-microservices-nestjs": {
+      "type": "application",
+      "root": "apps/graphQL-microservices-nestjs",
+      "entryFile": "main",
+      "sourceRoot": "apps/graphQL-microservices-nestjs/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/graphQL-microservices-nestjs/tsconfig.app.json"
+      }
+    },
+    "users": {
+      "type": "application",
+      "root": "apps/users",
+      "entryFile": "main",
+      "sourceRoot": "apps/users/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/users/tsconfig.app.json"
+      }
+    },
+    "posts": {
+      "type": "application",
+      "root": "apps/posts",
+      "entryFile": "main",
+      "sourceRoot": "apps/posts/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/posts/tsconfig.app.json"
+      }
+    }
+  }
+}
